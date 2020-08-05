@@ -13,8 +13,8 @@ public class Author {
 
     // ID is a unique identifier to uniquely identify each author and then we add the required annotation
     // this is the linkage from the OO world to the persistant world.
+    // Tell JPA how to generate the ID by generate value annotation
     @Id
-    // Tell JPA how to generate the ID
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String firstName;
